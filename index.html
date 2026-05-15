@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Britzke | Software Engineer</title>
+    <meta name="description" content="John Britzke - Senior Frontend Engineer specializing in React and accessible design systems. 9+ years building performant, user-centric web and mobile applications. Currently at Mercor Intelligence.">
+    <meta name="keywords" content="John Britzke, Senior Frontend Engineer, React, TypeScript, Accessible Design Systems, JavaScript, Angular, TailwindCSS, Oracle, Mercor Intelligence, Software Engineer, iOS Development">
+    <meta property="og:title" content="John Britzke | Senior Frontend Engineer">
+    <meta property="og:description" content="Analyst at Mercor Intelligence. Passionate about accessible, high-performance UIs with React and modern design systems.">
+    <meta property="og:type" content="website">
+    <title>John Britzke | Frontend Engineer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,164 +16,229 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #111827; /* bg-gray-900 */
-            color: #d1d5db; /* text-gray-300 */
+            background-color: #111827;
+            color: #d1d5db;
         }
         .section-title {
             @apply text-3xl font-bold text-white mb-8 border-b-2 border-indigo-500 pb-2 inline-block;
         }
         .card {
-            @apply bg-gray-800 border border-gray-700 rounded-xl shadow-lg transition-transform transform hover:-translate-y-1;
+            @apply bg-gray-800 border border-gray-700 rounded-2xl shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl;
         }
         .tag {
-            @apply inline-block bg-indigo-600/50 text-indigo-200 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2;
+            @apply inline-flex items-center bg-indigo-600/20 text-indigo-200 hover:bg-indigo-600 hover:text-white rounded-full px-4 py-1 text-sm font-medium mr-2 mb-3 transition-colors;
+        }
+        .nav-link {
+            @apply hover:text-indigo-400 transition-colors duration-200;
         }
     </style>
 </head>
 <body class="antialiased">
 
     <!-- Header & Navigation -->
-    <header class="bg-gray-900/70 backdrop-blur-lg sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold text-white">
-                John Britzke
-            </div>
-            <ul class="flex items-center space-x-4">
-                <li><a href="#about" class="hover:text-indigo-400 transition-colors">About</a></li>
-                <li><a href="#experience" class="hover:text-indigo-400 transition-colors">Experience</a></li>
-                <li><a href="#skills" class="hover:text-indigo-400 transition-colors">Skills</a></li>
-                <li><a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a></li>
+    <header class="bg-gray-900/80 backdrop-blur-lg sticky top-0 z-50 border-b border-gray-700">
+        <nav class="container mx-auto px-6 py-5 flex justify-between items-center max-w-screen-2xl">
+            <div class="text-3xl font-bold text-white tracking-tight">John Britzke</div>
+            <ul class="flex items-center space-x-8 text-sm font-medium">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Main Content -->
-    <main class="container mx-auto px-6 py-12">
-
-        <!-- Hero Section -->
-        <section id="hero" class="text-center py-20">
-            <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-4">
-                Software Engineer & Mobile Developer
+    <!-- Hero Section -->
+    <section id="hero" class="pt-24 pb-20 text-center container mx-auto px-6 max-w-screen-2xl">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white leading-none tracking-tighter mb-6">
+                Analyst
             </h1>
-            <p class="text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
-                Developer with a foundation in software engineering and a passion for creating user-friendly and efficient software solutions. I hold a bachelor's degree in computer science from California State University-East Bay and have cultivated a strong interest in Cognitive Studies. My professional journey has been driven by a dedication to creating software that not only meets business objectives but also enhances the user experience.
+            <p class="text-2xl text-indigo-400 font-medium mb-4">React • Accessible Design Systems • Mercor Intelligence</p>
+            <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
+                7+ years crafting clean, performant, and inclusive web experiences. Passionate about turning complex problems into intuitive user interfaces that scale.
             </p>
-            <div class="mt-8 flex justify-center space-x-4">
-                <a href="#contact" class="bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-indigo-700 transition-all shadow-lg">
+            <div class="mt-12 flex flex-wrap justify-center gap-4">
+                <a href="#contact" 
+                   class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-4 px-8 rounded-2xl text-lg transition-all shadow-lg inline-flex items-center">
                     Get In Touch
                 </a>
-                <a href="https://www.linkedin.com/in/jbritzke/" target="_blank" rel="noopener noreferrer" class="bg-gray-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-gray-600 transition-all shadow-lg">
+                <a href="https://www.linkedin.com/in/jbritzke/" target="_blank" rel="noopener noreferrer"
+                   class="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-4 px-8 rounded-2xl text-lg transition-all shadow-lg inline-flex items-center">
                     View LinkedIn
                 </a>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="py-20">
-            <h2 class="section-title">About Me</h2>
-            <div class="card p-8">
-                <p class="text-lg leading-relaxed text-gray-300">
-                    I am a Software Engineer with seven years of experience in developing enterprise-level applications. My expertise lies in creating clean, maintainable, and performant code, with a strong emphasis on UX and customer experience, working cross-functionally with design and product for pixel-perfect implementations.
-                </p>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="py-20">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="space-y-12">
-                <!-- Job Item -->
-                <div class="card p-6 md:flex items-start">
-                    <div class="md:w-1/4 text-indigo-400 font-semibold">
-                        <p>May 2021 - Feb 2025</p>
-                    </div>
-                    <div class="md:w-3/4">
-                        <h3 class="text-xl font-bold text-white">Software Engineer</h3>
-                        <p class="text-md text-gray-400 mb-3">Oracle</p>
-                        <p class="text-gray-300">
-                            Designed, developed, troubleshooted and debugged the toolkit containing web components, services
-and tools that power Oracle's Cloud applications, delivering mission-critical code in 3-month cycles. JET is a cornerstone technology used directly or indirectly by thousands of developers every day, both
-inside and outside of Oracle.
-                        </p>
-                    </div>
-                </div>
-                <!-- Job Item -->
-                <div class="card p-6 md:flex items-start">
-                    <div class="md:w-1/4 text-indigo-400 font-semibold">
-                        <p>Dec 2019 - May 2021</p>
-                    </div>
-                    <div class="md:w-3/4">
-                        <h3 class="text-xl font-bold text-white">Software Engineer</h3>
-                        <p class="text-md text-gray-400 mb-3">Bynder</p>
-                        <p class="text-gray-300">
-                            Front end development for SaaS Digital Asset Management with a focus on Angular.
-                        </p>
-                    </div>
-                </div>
-                <!-- Job Item -->
-                <div class="card p-6 md:flex items-start">
-                    <div class="md:w-1/4 text-indigo-400 font-semibold">
-                        <p>May 2018 - Aug 2019</p>
-                    </div>
-                    <div class="md:w-3/4">
-                        <h3 class="text-xl font-bold text-white">Software Engineer</h3>
-                        <p class="text-md text-gray-400 mb-3">Walmart Global Tech</p>
-                        <p class="text-gray-300">
-                           Worked on platforms within a massive e-commerce codebase, emphasizing UX and Customer
-Experience; upgraded codebase from older versions of code while implementing new UX designs to
-pixel-perfect specifications; implemented front end for several brand new services.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="py-20">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="card p-8">
-                <p>
-                    • Javascript<br />
-• Typescript<br />
-• React.js<br />
-• Redux<br />
-• Svelte<br />
-• Jest<br />
-• Responsive Web Design<br />
-• HTML5<br />
-• CSS3<br />
-• JSON<br />
-• TailwindCSS<br />
-• Node.js<br />
-• Express<br />
-• Python<br />
-• Swift<br />
-• iOS Development<br />
-• Xcode<br />
-• Git<br />
-                </p>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer id="contact" class="bg-gray-800 border-t border-gray-700">
-        <div class="container mx-auto px-6 py-12 text-center">
-            <h2 class="text-3xl font-bold text-white mb-4">Let's Connect</h2>
-            <p class="text-gray-400 mb-8 max-w-xl mx-auto">
-                I'm open to discussing new opportunities, sharing knowledge, or collaborating on interesting projects. Feel free to reach out.
-            </p>
-            <div class="flex justify-center items-center space-x-6">
-                <a href="https://www.linkedin.com/in/jbritzke/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-indigo-400 transition-colors">
-                    <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"/></svg>
-                </a>
-                <a href="https://github.com/00d" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-indigo-400 transition-colors">
-                     <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                <a href="https://github.com/00d" target="_blank" rel="noopener noreferrer"
+                   class="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-4 px-8 rounded-2xl text-lg transition-all shadow-lg inline-flex items-center">
+                    GitHub
                 </a>
             </div>
         </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6 max-w-screen-2xl">
+            <h2 class="section-title">About Me</h2>
+            <div class="card p-10 max-w-3xl mx-auto">
+                <p class="text-lg leading-relaxed text-gray-300">
+                    Frontend Engineer with over 7 years of experience building enterprise-grade applications. 
+                    Currently at Mercor Intelligence, I specialize in React, accessible design systems, and creating pixel-perfect, inclusive user interfaces. 
+                    My background includes full-stack development, mobile (iOS), and cross-functional collaboration to deliver high-impact products that prioritize user experience and performance.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20">
+        <div class="container mx-auto px-6 max-w-screen-2xl">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="space-y-12">
+
+                <!-- Mercor Intelligence -->
+                <div class="card p-8 md:flex gap-8">
+                    <div class="md:w-64 text-indigo-400 font-semibold text-lg mb-4 md:mb-0">July 2025 – Present</div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold text-white">Analyst</h3>
+                        <p class="text-xl text-gray-400 mb-4">Mercor Intelligence • San Francisco Bay Area</p>
+                        <p class="text-gray-300 leading-relaxed">
+                            Contributing to Mercor’s AI-powered talent.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Oracle -->
+                <div class="card p-8 md:flex gap-8">
+                    <div class="md:w-64 text-indigo-400 font-semibold text-lg mb-4 md:mb-0">May 2021 – Feb 2025</div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold text-white">Software Engineer (JET Team)</h3>
+                        <p class="text-xl text-gray-400 mb-4">Oracle • Remote / Bay Area</p>
+                        <p class="text-gray-300 leading-relaxed">
+                            Designed, developed, troubleshot, and debugged the toolkit containing web components, services and tools that power Oracle’s Cloud applications. 
+                            Delivered mission-critical code in 3-month cycles; JET is used by thousands of developers daily.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Bynder -->
+                <div class="card p-8 md:flex gap-8">
+                    <div class="md:w-64 text-indigo-400 font-semibold text-lg mb-4 md:mb-0">Dec 2019 – May 2021</div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold text-white">Software Engineer</h3>
+                        <p class="text-xl text-gray-400 mb-4">Bynder</p>
+                        <p class="text-gray-300 leading-relaxed">
+                            Frontend development for SaaS Digital Asset Management platform with a focus on Angular.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Walmart Global Tech -->
+                <div class="card p-8 md:flex gap-8">
+                    <div class="md:w-64 text-indigo-400 font-semibold text-lg mb-4 md:mb-0">May 2018 – Aug 2019</div>
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-bold text-white">Software Engineer</h3>
+                        <p class="text-xl text-gray-400 mb-4">Walmart Global Tech</p>
+                        <p class="text-gray-300 leading-relaxed">
+                            Worked on massive e-commerce platforms emphasizing UX and customer experience. Upgraded legacy codebases and implemented new frontend services to pixel-perfect specifications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6 max-w-screen-2xl">
+            <h2 class="section-title">Skills &amp; Technologies</h2>
+            <div class="card p-10">
+                <div class="flex flex-wrap gap-2">
+                    <span class="tag">React.js</span>
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">TailwindCSS</span>
+                    <span class="tag">Angular</span>
+                    <span class="tag">Redux</span>
+                    <span class="tag">Svelte</span>
+                    <span class="tag">GraphQL</span>
+                    <span class="tag">Node.js</span>
+                    <span class="tag">Express</span>
+                    <span class="tag">Go</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Swift</span>
+                    <span class="tag">iOS Development</span>
+                    <span class="tag">Xcode</span>
+                    <span class="tag">HTML5 / CSS3</span>
+                    <span class="tag">Responsive Design</span>
+                    <span class="tag">Accessible Design Systems</span>
+                    <span class="tag">Figma</span>
+                    <span class="tag">Firebase</span>
+                    <span class="tag">Jest</span>
+                    <span class="tag">Git / GitHub</span>
+                    <span class="tag">CI/CD</span>
+                    <span class="tag">Full-Stack Development</span>
+                    <span class="tag">Event-Driven Architecture</span>
+                    <span class="tag">Code Reviews &amp; Debugging</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects / GitHub Section -->
+    <section id="projects" class="py-20">
+        <div class="container mx-auto px-6 max-w-screen-2xl">
+            <h2 class="section-title">Featured Projects &amp; Repositories</h2>
+            <div class="text-center text-gray-400 mb-8">
+                Explore my open-source work and contributions on GitHub
+            </div>
+            <div class="flex justify-center">
+                <a href="https://github.com/00d" target="_blank" rel="noopener noreferrer"
+                   class="inline-flex items-center gap-3 bg-gray-800 hover:bg-gray-700 text-white px-8 py-4 rounded-3xl text-lg font-medium transition-all">
+                    <span>View All Projects on GitHub</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L9 15" />
+                    </svg>
+                </a>
+            </div>
+            <!-- Add specific project cards here later if desired -->
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6 max-w-screen-2xl">
+            <h2 class="section-title">Education</h2>
+            <div class="card p-8 max-w-xl mx-auto">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <h3 class="font-bold text-xl text-white">B.S. Computer Science</h3>
+                        <p class="text-gray-400">California State University – East Bay</p>
+                    </div>
+                    <div class="text-right text-indigo-400 font-medium">2017</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="bg-gray-950 border-t border-gray-800 py-16">
+        <div class="container mx-auto px-6 max-w-screen-2xl text-center">
+            <h2 class="text-4xl font-bold text-white mb-4">Let’s Connect</h2>
+            <p class="text-gray-400 max-w-md mx-auto mb-10">
+                Open to new opportunities, collaborations, or just a good tech conversation. Reach out anytime.
+            </p>
+            <div class="flex justify-center items-center gap-8 text-4xl mb-12">
+                <a href="https://www.linkedin.com/in/jbritzke/" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-400 transition-colors">LinkedIn</a>
+                <a href="https://github.com/00d" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-400 transition-colors">GitHub</a>
+            </div>
+            <p class="text-sm text-gray-500">© 2026 John Britzke • Built as a single-file optimized homepage</p>
+        </div>
     </footer>
 
+    <script>
+        // Optional: Tailwind script already loaded; you can add minor JS here if needed (e.g., mobile menu)
+        console.log('%c✅ Optimized homepage loaded successfully!', 'color: #6366f1; font-weight: bold;');
+    </script>
 </body>
 </html>
